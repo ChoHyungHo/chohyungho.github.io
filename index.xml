@@ -21,10 +21,10 @@
     <description><![CDATA[ㅇㄹㄹㄹㄹㄹ]]></description>
 </item><item>
     <title>First_doc 123</title>
-    <link>http://example.org/first_doc/</link>
+    <link>http://example.org/posts/first_doc/</link>
     <pubDate>Tue, 19 Jan 2021 17:02:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://example.org/first_doc/</guid>
+    <guid>http://example.org/posts/first_doc/</guid>
     <description><![CDATA[테스트 문서 1 - 1
 테스트 2 3]]></description>
 </item></channel>
