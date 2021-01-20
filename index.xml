@@ -1,31 +1,32 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Home</title>
-        <link>http://example.org/</link>
-        <description>This is My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 19 Jan 2021 17:28:29 &#43;0900</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <title>Enjoy the coding</title>
+        <link>https://chohyungho.github.io/</link>
+        <description>기술, 독서, 생각, 사이트, 프로그램 공유</description>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>sagehoit@gmail.com (조형호(Cho, HyungHo))</managingEditor>
+            <webMaster>sagehoit@gmail.com (조형호(Cho, HyungHo))</webMaster><lastBuildDate>Tue, 19 Jan 2021 17:28:29 &#43;0900</lastBuildDate>
+            <atom:link href="https://chohyungho.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Test2</title>
-    <link>http://example.org/posts/Test2/</link>
+    <link>https://chohyungho.github.io/posts/Test2/</link>
     <pubDate>Tue, 19 Jan 2021 17:28:29 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/Test2/</guid>
+    <guid>https://chohyungho.github.io/posts/Test2/</guid>
     <description><![CDATA[테스트하는데 왜 안나오지&hellip;?]]></description>
 </item><item>
     <title>Test1</title>
-    <link>http://example.org/posts/test1/</link>
+    <link>https://chohyungho.github.io/posts/test1/</link>
     <pubDate>Tue, 19 Jan 2021 17:07:03 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/test1/</guid>
+    <guid>https://chohyungho.github.io/posts/test1/</guid>
     <description><![CDATA[ㅇㄹㄹㄹㄹㄹ]]></description>
 </item><item>
     <title>First_doc 123</title>
-    <link>http://example.org/posts/First_doc/</link>
+    <link>https://chohyungho.github.io/posts/First_doc/</link>
     <pubDate>Tue, 19 Jan 2021 17:02:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/First_doc/</guid>
-    <description><![CDATA[테스트 문서 1 - 1
+    <guid>https://chohyungho.github.io/posts/First_doc/</guid>
+    <description><![CDATA[테스트 문서 1 - 1 - 2
 테스트 2 3]]></description>
 </item></channel>
 </rss>
