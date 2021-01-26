@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Enjoy the coding</title>
+        <link>https://chohyungho.github.io/posts/</link>
+        <description>All Posts | Enjoy the coding</description>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>sagehoit@gmail.com (조형호(Cho, HyungHo))</managingEditor>
+            <webMaster>sagehoit@gmail.com (조형호(Cho, HyungHo))</webMaster><lastBuildDate>Fri, 22 Jan 2021 13:49:26 &#43;0900</lastBuildDate><atom:link href="https://chohyungho.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>블로그를 시작하다</title>
+    <link>https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/</link>
+    <pubDate>Fri, 22 Jan 2021 13:49:26 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/</guid>
+    <description><![CDATA[이전부터 블로그는 하고 싶었다. 그냥 생각만 하고 눈팅만 하고 다녔다. 그러다가 Github Page라는 것을 알게 되었다.
+ 오~ 이거 괜찮은데? 돈도 안들고?
+ 그래서 조금 알아보니 Jekyll이란 것이 유명하단다.(도움을 많이 받으려면 대세를 따라야 한다&hellip;) 그래서 시도했었다.
+처음에는 좋았다. 그런데 내 마음대로 이것저것 만지려니 생각보다 복잡하고 손이 많이 가게 되었다. 게다가 생성하고 확인하려면 Github에 올려야만 확인이 가능했다. 그래서 알아보니 또 뭔가를 설치해야 한다고 했다. 그래서 빠르게 포기. 그리고는 잊고 있었다.]]></description>
+</item></channel>
+</rss>

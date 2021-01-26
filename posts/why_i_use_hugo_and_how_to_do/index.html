@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>블로그를 시작하다 - Enjoy the coding</title><meta name="Description" content="기술, 독서, 생각, 사이트, 프로그램 공유"><meta property="og:title" content="블로그를 시작하다" />
+<meta property="og:description" content="이전부터 블로그는 하고 싶었다. 그냥 생각만 하고 눈팅만 하고 다녔다. 그러다가 Github Page라는 것을 알게 되었다.
+ 오~ 이거 괜찮은데? 돈도 안들고?
+ 그래서 조금 알아보니 Jekyll이란 것이 유명하단다.(도움을 많이 받으려면 대세를 따라야 한다&hellip;) 그래서 시도했었다.
+처음에는 좋았다. 그런데 내 마음대로 이것저것 만지려니 생각보다 복잡하고 손이 많이 가게 되었다. 게다가 생성하고 확인하려면 Github에 올려야만 확인이 가능했다. 그래서 알아보니 또 뭔가를 설치해야 한다고 했다. 그래서 빠르게 포기. 그리고는 잊고 있었다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" />
+<meta property="og:image" content="https://chohyungho.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-01-22T13:49:26+09:00" />
+<meta property="article:modified_time" content="2021-01-22T13:49:26+09:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://chohyungho.github.io/logo.png"/>
+
+<meta name="twitter:title" content="블로그를 시작하다"/>
+<meta name="twitter:description" content="이전부터 블로그는 하고 싶었다. 그냥 생각만 하고 눈팅만 하고 다녔다. 그러다가 Github Page라는 것을 알게 되었다.
+ 오~ 이거 괜찮은데? 돈도 안들고?
+ 그래서 조금 알아보니 Jekyll이란 것이 유명하단다.(도움을 많이 받으려면 대세를 따라야 한다&hellip;) 그래서 시도했었다.
+처음에는 좋았다. 그런데 내 마음대로 이것저것 만지려니 생각보다 복잡하고 손이 많이 가게 되었다. 게다가 생성하고 확인하려면 Github에 올려야만 확인이 가능했다. 그래서 알아보니 또 뭔가를 설치해야 한다고 했다. 그래서 빠르게 포기. 그리고는 잊고 있었다."/>
+<meta name="application-name" content="Enjoy the coding">
+<meta name="apple-mobile-web-app-title" content="Enjoy the coding"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "블로그를 시작하다",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chohyungho.github.io\/posts\/why_i_use_hugo_and_how_to_do\/"
+        },"genre": "posts","keywords": "post, hugo, github page, static site, github.io","wordcount":  864 ,
+        "url": "https:\/\/chohyungho.github.io\/posts\/why_i_use_hugo_and_how_to_do\/","datePublished": "2021-01-22T13:49:26+09:00","dateModified": "2021-01-22T13:49:26+09:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "조형호(Cho, HyungHo)"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Enjoy the coding">Home</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="포스트 리스트"> Posts </a><a class="menu-item" href="/tags/" title="태그 리스트"> Tags </a><a class="menu-item" href="/categories/" title="카테고리 리스트"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Enjoy the coding">Home</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="포스트 리스트">Posts</a><a class="menu-item" href="/tags/" title="태그 리스트">Tags</a><a class="menu-item" href="/categories/" title="카테고리 리스트">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">블로그를 시작하다</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/ChoHyungHo" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>조형호(Cho, HyungHo)</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tech/"><i class="far fa-folder fa-fw"></i>tech</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-22">2021-01-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;864 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo">Hugo</a>
+      <ul>
+        <li><a href="#hugo란">Hugo란?</a></li>
+        <li><a href="#hugo-설치">Hugo 설치</a></li>
+        <li><a href="#github-설정">Github 설정</a></li>
+        <li><a href="#hugo-소스-생성">Hugo 소스 생성</a></li>
+        <li><a href="#hugo-테마-설정">Hugo 테마 설정</a></li>
+        <li><a href="#글을-쓰고-확인하기">글을 쓰고 확인하기</a></li>
+        <li><a href="#github에-소스-올리기">Github에 소스 올리기</a></li>
+      </ul>
+    </li>
+    <li><a href="#hugo-추가-사항">Hugo 추가 사항</a>
+      <ul>
+        <li><a href="#스크립트로-업로드-자동화">스크립트로 업로드 자동화</a></li>
+        <li><a href="#post">Post</a></li>
+        <li><a href="#customizeconfigtoml만으로-안될-때">Customize(config.toml만으로 안될 때)</a></li>
+        <li><a href="#utterences-추가예정">Utterences 추가(예정)</a></li>
+        <li><a href="#gist-삽입예정">Gist 삽입(예정)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><br /></p>
+<p>이전부터 블로그는 하고 싶었다. 그냥 생각만 하고 눈팅만 하고 다녔다. 그러다가 Github Page라는 것을 알게 되었다.</p>
+<blockquote>
+<p>오~ 이거 괜찮은데? 돈도 안들고?</p>
+</blockquote>
+<p>그래서 조금 알아보니 Jekyll이란 것이 유명하단다.<del>(도움을 많이 받으려면 대세를 따라야 한다&hellip;)</del> 그래서 시도했었다.</p>
+<p>처음에는 좋았다. 그런데 내 마음대로 이것저것 만지려니 생각보다 복잡하고 손이 많이 가게 되었다. 게다가 생성하고 확인하려면 Github에 올려야만 확인이 가능했다. 그래서 알아보니 또 뭔가를 설치해야 한다고 했다. 그래서 <del>빠르게</del> 포기. 그리고는 잊고 있었다.</p>
+<p>그러다 요즘 기술적인 것들을 찾으려하면 열에 서넛은 Gihub Page 더라. 그래서 다시 한번 도전했다. 이번에는 Jekyll은 바로 제끼고 다른 것을 알아봤다. 요즘 Hugo가 뜬다더라. 슥 보니 일단 설정은 그래도 <del>Jekyll 보다는</del> 간단한 편이다. 그래서 시도해봤다.</p>
+<h2 id="hugo">Hugo</h2>
+<h3 id="hugo란">Hugo란?</h3>
+<p>Hugo를 인터넷에서 찾으면 아래처럼 나온다.</p>
+<blockquote>
+<p><a href="https://ko.wikipedia.org/wiki/%ED%9C%B4%EA%B3%A0_%28%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%29" target="_blank" rel="noopener noreffer">Hugo</a>는 <a href="https://ko.wikipedia.org/wiki/Go_%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%29" target="_blank" rel="noopener noreffer">Go</a>라는 언어로 개발된 <a href="https://ko.wikipedia.org/wiki/%EC%A0%95%EC%A0%81_%EC%9B%B9_%ED%8E%98%EC%9D%B4%EC%A7%80" target="_blank" rel="noopener noreffer">정적 사이트</a> 생성기이다.</p>
+</blockquote>
+<p>쉽게 말하자만 내가 적은 글(markdown)을 HTML 문서로 변환해주는 프로그램이라는 소리다.</p>
+<p><br /><br /></p>
+<p>※ 참고로 대괄호 [ ] 안에 있는 것은 내 경우의 명령이다.</p>
+<h3 id="hugo-설치">Hugo 설치</h3>
+<p>나는 Windows 운영체제에서 사용할꺼니까~~(언젠가는 Mac을 사야지&hellip;)~~ 아래 순서대로 설치한다.</p>
+<ol>
+<li><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">hugo Github</a>에서 최신버전 다운로드 [<code>Windows-64bit</code>]</li>
+<li>압축을 풀고 원하는 위치에 놓음 [<code>C:\Hugo\bin</code>]</li>
+<li>쉽게 실행하기 위해 환경변수 <code>Path</code>에 추가 [<code>$ set PATH=%PATH%;C:\Hugo\bin</code>]</li>
+<li>커맨드창에 <code>$ hugo version</code>으로 확인</li>
+</ol>
+<p>확인까지 했으면 다음 단계로 넘어간다.</p>
+<h3 id="github-설정">Github 설정</h3>
+<p>Hugo 설정을 하기 전에 Gihub repository부터 만든다. 만들 repository는 2가지다.</p>
+<ol>
+<li>source repository(<code>&lt;blog source name&gt;</code>): 소스를 저장한다. hugo를 실행하면 내가 작성한 Markdown(이하 md) 파일들을 html 파일들로 만들고 이것으로 내 블로그 repository에 올린다. 따라서 소스를 따로 저장할 필요가 있다.[<code>ChoHyungHo/blog</code>]</li>
+<li>blog repository(<code>&lt;github name&gt;.github.io</code>): 실제로 블로그 파일들이 올라가는 곳이다. 생성할 때 나중을 위해서 README.md 파일은 생성하도록 하자. 이 repository를 Submodule로 연결할 예정인데, 아무것도 없으면 Submodule로 clone을 할 수 없다. [<code>ChoHyungHo/ChoHyungHo.github.io</code>]</li>
+</ol>
+<h3 id="hugo-소스-생성">Hugo 소스 생성</h3>
+<p>먼저 원하는 위치에 폴더를 생성한다.[<code>D:\Blog</code>] 그리고 그 폴더로 이동하여 <code>$ hugo new site &lt;source folder name&gt;</code> 으로 새로운 hugo 사이트를 생성한다. [<code>$ hugo new site blog</code>] 그러면 <code>&lt;source folder name&gt;</code>으로 폴더가 생성되고 기본 소스가 <code>&lt;source folder name&gt;</code>에 생성되어 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;source folder name&gt;
+└ archetypes
+  └ default.md
+└ content
+└ data
+└ layouts
+└ resources
+  └ _gen
+    └ assets
+    └ images
+└ static
+└ themes
+└ config.toml
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="hugo-테마-설정">Hugo 테마 설정</h3>
+<ol>
+<li><a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer">이곳</a>에서 원하는 테마를 찾는다. [ 내 테마는 <a href="https://themes.gohugo.io/loveit/" target="_blank" rel="noopener noreffer">Love It</a> ]</li>
+<li>그 테마의 gihub repository 주소를 복사한다.</li>
+<li>선택한 테마를 submodule로 추가한다. 해당 테마를 submodule로 추가하기 위해서 <code>$ git init</code>으로 <code>source folder</code>를 초기화 해준다.[<code>$ git init</code> 이후 <code>$ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt</code>]</li>
+<li>config.toml 파일을 선택한 테마의 설명에 따라 수정한다. [나는 <a href="https://themes.gohugo.io//theme/LoveIt/theme-documentation-basics/" target="_blank" rel="noopener noreffer">여기</a> 기반으로 작성]</li>
+</ol>
+<h3 id="글을-쓰고-확인하기">글을 쓰고 확인하기</h3>
+<ol>
+<li>
+<p><code>$ hugo new &lt;post name&gt;.md</code>로 파일을 생성하면 <code>content/&lt;post name&gt;.md</code> 에 파일이 생성된다. 만약 해당 폴더에 구분을 짓고 싶으면 <code>$ hugo new &lt;folder name&gt;/&lt;post name&gt;.md</code>로 명령하면 <code>content/&lt;folder name&gt;/&lt;post name&gt;.md</code> 로 파일이 생성된다. [<code>$ hugo new posts/first_post.md</code>]</p>
+</li>
+<li>
+<p>생성된 파일을 열어보면 아래처럼 나온다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">---
+title: &#34;first_post&#34;
+date: 2021-01-26T14:43:37+09:00
+draft: true
+---
+   
+</code></pre></td></tr></table>
+</div>
+</div><p>그 밑에 간단히 글을 쓰고 저장한다.</p>
+</li>
+<li>
+<p><code>$ hugo server -D</code>로 서버를 실행하고 <code>http://localhost;1313</code>으로 들어가면 문서를 확인할 수 있다.(-D 옵션은 draft 문서(=초안 문서)도 볼 수 있게 해준다. draft 문서는 <code>$ hugo</code>로 빌드할 때 빌드에서 제외한다. 추가하려면 위의 양식에서 <code>draft: false</code>로 변경하면 된다.)</p>
+</li>
+</ol>
+<h3 id="github에-소스-올리기">Github에 소스 올리기</h3>
+<p>이제 Gihub와 연결해보자.</p>
+<ol>
+<li>Github Page repository에 submodule로 연결한다. 이때 폴더는 public 폴더로 연결한다. 이유는 <code>hugo</code>를 빌드하면(<code>$ hugo</code>) public 폴더로 빌드하기 때문이다.
+[<code>git submodule add https://ChoHyungHo@github.com/ChoHyungHo/ChoHyungHo.github.io.git public</code>]
+(※ 중간에 <code>ChoHyungHo@github.com</code>이 들어가는 것은 내 컴퓨터에 회사 아이디로 로그인 되어 있어서 개인 github에 올리기 위해서 넣었다.)</li>
+<li>hugo를 빌드한다. [<code>$ hugo</code>]</li>
+<li>public 폴더로 이동하여 github로 올린다. [다음 순서대로 명령 : <code>$ cd public</code> <code>$ git add .</code> <code>$ git commit -m &quot;&lt;message&gt;&quot;</code> <code>$ git push</code> ]</li>
+<li>루트 폴더로 이동하고(<code>$ cd ..</code>) 소스를 github로 올린다. [다음 순서대로 명령 : <code>$ git add .</code> <code>$ git commit -m &lt;message&gt;</code> <code>$ git remote add origin https://ChoHyungHo@github.com/ChoHyungHo/blog.git</code> <code>$ git push</code>]</li>
+</ol>
+<p><br /></p>
+<p>소스를 다 올렸으면 한번 직접 사이트로 들어가서 확인해보자. 사이트 주소는 <code>&lt;your github name&gt;.github.io</code>이다.
+[<code>ChoHyungHo.github.io</code>]</p>
+<p>이후로는 글을 작성하고 <code>$ hugo service -D</code>로 <code>http://localhost:1313</code>에서 확인 후 git으로 올려주면 된다.</p>
+<p><br /></p>
+<h2 id="hugo-추가-사항">Hugo 추가 사항</h2>
+<p>여기까지 했으면 기본적인 부분은 다 끝났다. 이제 블로그를 만들면 된다. 하지만 내가 원하는 대로 만드려면 몇가지 체크해야 할 사항들이 남아있다.</p>
+<h3 id="스크립트로-업로드-자동화">스크립트로 업로드 자동화</h3>
+<p>나는 Powershell로 실행하는 방법을 찾았다. 소스는 아래와 같다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">Write-Output</span> <span class="s2">&#34;Deploying updates to GitHub...&#34;</span>
+
+<span class="c"># Remove-Item .\public\* -Recurse</span>
+
+<span class="n">hugo</span>
+
+<span class="nb">Set-Location</span> <span class="p">.\</span><span class="n">public</span>
+
+<span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+
+<span class="nv">$msg</span> <span class="p">=</span> <span class="s2">&#34;rebuilding site </span><span class="p">$((</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">ToString</span><span class="p">(</span><span class="s1">&#39;yyyy-MM-dd&#39;</span><span class="p">))</span><span class="s2"> &#34;</span>
+
+<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&#34;$msg&#34;</span>
+
+<span class="n">git</span> <span class="n">push</span>
+
+<span class="nb">Set-Location</span> <span class="p">..</span>
+
+<span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+
+<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&#34;$msg&#34;</span>
+
+<span class="n">git</span> <span class="n">push</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="post">Post</h3>
+<ol>
+<li>그냥 최초에 파일을 생성해서 글을 작성한 후 public 폴더에 빌드된 것을 보면 원하는 모양으로 만들어지지 않을 때가 있다. 그때는 md 파일 상단에 <code>url:&lt;url&gt;</code>을 추가하면 해당 폴더로 빌드된다. 기본적으로는 <code>config.toml</code>의 <code>[permalinks] posts</code> 설정으로 생성한다.</li>
+<li>처음 생성할 때 상단에 나오는 것을 변경하고 싶을 때가 있다. 그때는 <code>archetypes/default.md</code> 파일을 수정하면 생성할 때부터 원하는 대로 나오도록 할 수 있다. 그리고 post의 포멧, newsletter의 포멧 등을 나눠서 설정할 수도 있다. 해당 부분에 대한 자세한 내용은 <a href="https://gohugo.io/content-management/archetypes/" target="_blank" rel="noopener noreffer">이곳</a>을 참조하자.</li>
+</ol>
+<h3 id="customizeconfigtoml만으로-안될-때">Customize(config.toml만으로 안될 때)</h3>
+<p>테마의 모양을 바꾸거나 특정 위치에 내가 원하는 것들을 넣고 싶을 때 사용한다. 나 같은 경우 테마에서 아바타의 링크가 post로 고정되어 있었다. 이것을 고치고 싶었는데, 아래처럼 방법을 사용했다.</p>
+<ol>
+<li>아바타의 페이지를 html을 찾는다. 내 테마의 경우 <code>themes/LoveIt/layouts/partials/home/profile.html</code>이었다.</li>
+<li>해당 파일을 <code>layouts/partials/home/profile.html</code>로 복사하고 원하는 부분을 수정한다.</li>
+</ol>
+<p>그리고 빌드하면 원하는 링크로 변경되어 있다. 이렇게 테마의 파일을 폴더와 같이 복사하여  <code>layout</code> 폴더에 넣은 후 수정하면 테마의 파일을 대신하여 내가 수정한 파일로 해당 부분을 수정한다. 비슷한 방법으로 아래에 나와있는 Gist를 삽입할 수 있다.</p>
+<h3 id="utterences-추가예정">Utterences 추가(예정)</h3>
+<h3 id="gist-삽입예정">Gist 삽입(예정)</h3>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-01-22</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/posts/why_i_use_hugo_and_how_to_do/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다" data-hashtags="post,hugo,github page,static site,github.io"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-hashtag="post"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://chohyungho.github.io/posts/why_i_use_hugo_and_how_to_do/" data-title="블로그를 시작하다"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/post/">post</a>,&nbsp;<a href="/tags/hugo/">hugo</a>,&nbsp;<a href="/tags/github-page/">github page</a>,&nbsp;<a href="/tags/static-site/">static site</a>,&nbsp;<a href="/tags/github.io/">github.io</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/ChoHyungHo" target="_blank">조형호(Cho, HyungHo)</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
