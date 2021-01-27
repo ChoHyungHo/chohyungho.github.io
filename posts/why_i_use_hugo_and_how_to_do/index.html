@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/chohyungho.github.io\/posts\/why_i_use_hugo_and_how_to_do\/"
-        },"genre": "posts","keywords": "post, hugo, github page, static site, github.io","wordcount":  864 ,
+        },"genre": "posts","keywords": "post, hugo, github page, static site, github.io","wordcount":  876 ,
         "url": "https:\/\/chohyungho.github.io\/posts\/why_i_use_hugo_and_how_to_do\/","datePublished": "2021-01-22T13:49:26+09:00","dateModified": "2021-01-22T13:49:26+09:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">블로그를 시작하다</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/ChoHyungHo" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>조형호(Cho, HyungHo)</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tech/"><i class="far fa-folder fa-fw"></i>tech</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-22">2021-01-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;864 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-22">2021-01-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;876 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -170,7 +170,7 @@
 <h3 id="github-설정">Github 설정</h3>
 <p>Hugo 설정을 하기 전에 Gihub repository부터 만든다. 만들 repository는 2가지다.</p>
 <ol>
-<li>source repository(<code>&lt;blog source name&gt;</code>): 소스를 저장한다. hugo를 실행하면 내가 작성한 Markdown(이하 md) 파일들을 html 파일들로 만들고 이것으로 내 블로그 repository에 올린다. 따라서 소스를 따로 저장할 필요가 있다.[<code>ChoHyungHo/blog</code>]</li>
+<li>source repository(<code>&lt;blog source name&gt;</code>): 소스를 저장한다. hugo를 실행하면 내가 작성한 Markdown(이하 md) 파일들을 html 파일들로 만들고 이것으로 내 블로그 repository에 올린다. 따라서 소스를 따로 저장할 필요가 있다. (이 repository는 README.md 등의 파일을 전혀 생성하지 않고 만들어야 한다.) [<code>ChoHyungHo/blog</code>]</li>
 <li>blog repository(<code>&lt;github name&gt;.github.io</code>): 실제로 블로그 파일들이 올라가는 곳이다. 생성할 때 나중을 위해서 README.md 파일은 생성하도록 하자. 이 repository를 Submodule로 연결할 예정인데, 아무것도 없으면 Submodule로 clone을 할 수 없다. [<code>ChoHyungHo/ChoHyungHo.github.io</code>]</li>
 </ol>
 <h3 id="hugo-소스-생성">Hugo 소스 생성</h3>
@@ -251,7 +251,7 @@ draft: true
 <p>이제 Gihub와 연결해보자.</p>
 <ol>
 <li>Github Page repository에 submodule로 연결한다. 이때 폴더는 public 폴더로 연결한다. 이유는 <code>hugo</code>를 빌드하면(<code>$ hugo</code>) public 폴더로 빌드하기 때문이다.
-[<code>git submodule add https://ChoHyungHo@github.com/ChoHyungHo/ChoHyungHo.github.io.git public</code>]
+[<code>$ git submodule add https://ChoHyungHo@github.com/ChoHyungHo/ChoHyungHo.github.io.git public</code>]
 (※ 중간에 <code>ChoHyungHo@github.com</code>이 들어가는 것은 내 컴퓨터에 회사 아이디로 로그인 되어 있어서 개인 github에 올리기 위해서 넣었다.)</li>
 <li>hugo를 빌드한다. [<code>$ hugo</code>]</li>
 <li>public 폴더로 이동하여 github로 올린다. [다음 순서대로 명령 : <code>$ cd public</code> <code>$ git add .</code> <code>$ git commit -m &quot;&lt;message&gt;&quot;</code> <code>$ git push</code> ]</li>

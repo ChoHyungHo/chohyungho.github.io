@@ -42,7 +42,7 @@ Hugo를 인터넷에서 찾으면 아래처럼 나온다.
 
 Hugo 설정을 하기 전에 Gihub repository부터 만든다. 만들 repository는 2가지다.
 
-1. source repository(`<blog source name>`): 소스를 저장한다. hugo를 실행하면 내가 작성한 Markdown(이하 md) 파일들을 html 파일들로 만들고 이것으로 내 블로그 repository에 올린다. 따라서 소스를 따로 저장할 필요가 있다.[`ChoHyungHo/blog`]
+1. source repository(`<blog source name>`): 소스를 저장한다. hugo를 실행하면 내가 작성한 Markdown(이하 md) 파일들을 html 파일들로 만들고 이것으로 내 블로그 repository에 올린다. 따라서 소스를 따로 저장할 필요가 있다. (이 repository는 README.md 등의 파일을 전혀 생성하지 않고 만들어야 한다.) [`ChoHyungHo/blog`]
 2. blog repository(`<github name>.github.io`): 실제로 블로그 파일들이 올라가는 곳이다. 생성할 때 나중을 위해서 README.md 파일은 생성하도록 하자. 이 repository를 Submodule로 연결할 예정인데, 아무것도 없으면 Submodule로 clone을 할 수 없다. [`ChoHyungHo/ChoHyungHo.github.io`]
 
 ### Hugo 소스 생성
@@ -98,7 +98,7 @@ Hugo 설정을 하기 전에 Gihub repository부터 만든다. 만들 repository
 이제 Gihub와 연결해보자.
 
 1. Github Page repository에 submodule로 연결한다. 이때 폴더는 public 폴더로 연결한다. 이유는 `hugo`를 빌드하면(`$ hugo`) public 폴더로 빌드하기 때문이다. 
-   [`git submodule add https://ChoHyungHo@github.com/ChoHyungHo/ChoHyungHo.github.io.git public`]
+   [`$ git submodule add https://ChoHyungHo@github.com/ChoHyungHo/ChoHyungHo.github.io.git public`]
    (※ 중간에 `ChoHyungHo@github.com`이 들어가는 것은 내 컴퓨터에 회사 아이디로 로그인 되어 있어서 개인 github에 올리기 위해서 넣었다.)
 2. hugo를 빌드한다. [`$ hugo`]
 3. public 폴더로 이동하여 github로 올린다. [다음 순서대로 명령 : `$ cd public` `$ git add .` `$ git commit -m "<message>"` `$ git push` ]
@@ -162,6 +162,8 @@ git push
 그리고 빌드하면 원하는 링크로 변경되어 있다. 이렇게 테마의 파일을 폴더와 같이 복사하여  `layout` 폴더에 넣은 후 수정하면 테마의 파일을 대신하여 내가 수정한 파일로 해당 부분을 수정한다. 비슷한 방법으로 아래에 나와있는 Gist를 삽입할 수 있다.
 
 ### Utterences 추가(예정)
+
+
 
 ### Gist 삽입(예정)
 
