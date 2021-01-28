@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Enjoy the coding</title>
+        <title>Enjoy your coding</title>
         <link>https://chohyungho.github.io/</link>
         <description>기술, 독서, 생각, 사이트, 프로그램 공유</description>
         <generator>Hugo -- gohugo.io</generator><managingEditor>sagehoit@gmail.com (조형호(Cho, HyungHo))</managingEditor>
